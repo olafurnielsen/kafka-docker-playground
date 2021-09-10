@@ -1,0 +1,28 @@
+# Kafka broker
+devbox:9092
+
+# Kafka Connect
+http://devbox:8083/
+
+# Confluent Control Center
+http://devbox:9021
+
+# ksqlDB
+devbox:8088
+
+
+# Kibana
+http://devbox:5601
+
+# Elasticsearch
+http://devbox:9200/
+
+
+# Postgres
+psql://devbox:5432
+
+# MySQL
+mysql://devbox:3306
+
+# Neo4j Graph Database
+http://devbox:7474/browser/
