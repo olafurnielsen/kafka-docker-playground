@@ -3,10 +3,8 @@ version: '2'
 services:
 
   mysql:
-    # *-----------------------------*
     # To connect to the DB:
     #   docker exec -it mysql bash -c 'mysql -u root -p$MYSQL_ROOT_PASSWORD demo'
-    # *-----------------------------*
     image: mysql:8.0
     container_name: mysql
     ports:
@@ -18,3 +16,4 @@ services:
     volumes:
      - ${PWD}/data/mysql:/docker-entrypoint-initdb.d
      - ${PWD}/data:/data
+     - ${PWD}/data/service-volumes/.mysql-data:/var/lib/mysql

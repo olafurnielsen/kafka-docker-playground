@@ -3,7 +3,7 @@ version: '2'
 services:
 
   kibana:
-    image: docker.elastic.co/kibana/kibana:7.10.1
+    image: docker.elastic.co/kibana/kibana:7.14.1
     container_name: kibana
     hostname: kibana
     depends_on:

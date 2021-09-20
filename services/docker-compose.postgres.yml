@@ -3,14 +3,13 @@ version: '2'
 services:
 
   postgres:
-    # *-----------------------------*
     # To connect to the DB: 
     #   docker exec -it postgres bash -c 'psql -U $POSTGRES_USER $POSTGRES_DB'
-    # *-----------------------------*
-    image: postgres:11
+    image: postgres:11.13
     container_name: postgres
     environment:
      - POSTGRES_USER=postgres
      - POSTGRES_PASSWORD=postgres
     volumes:
      - ${PWD}/data/postgres:/docker-entrypoint-initdb.d
+     - ${PWD}/data/service-volumes/.postgres-data:/var/lib/postgresql/data

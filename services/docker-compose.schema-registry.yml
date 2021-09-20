@@ -2,7 +2,7 @@
 version: '2'
 services:
   schema-registry:
-    image: confluentinc/cp-schema-registry:6.0.1
+    image: confluentinc/cp-schema-registry:6.2.0
     container_name: schema-registry
     ports:
       - "8081:8081"
